@@ -87,6 +87,12 @@ const getPostfixArr = (infixArr) => {
 
 const calculatePostfix = (postfixArr) => {
   const stack = [];
+  const calculate = {
+    [OPERATOR.PLUS]: (num1, num2) => num1 + num2,
+    [OPERATOR.MINUS]: (num1, num2) => num1 - num2,
+    [OPERATOR.MULTIPLY]: (num1, num2) => num1 * num2,
+    [OPERATOR.DIVIDE]: (num1, num2) => num1 / num2,
+  };
 
   postfixArr.forEach(item => {
     if (!isNaN(item)) {
@@ -94,28 +100,12 @@ const calculatePostfix = (postfixArr) => {
     } else {
       const num2 = Number(stack.pop());
       const num1 = Number(stack.pop());
-
-      switch (item) {
-        case OPERATOR.PLUS :
-          stack.push(num1 + num2);
-          break;
-        case OPERATOR.MINUS :
-          stack.push(num1 - num2);
-          break;
-        case OPERATOR.MULTIPLY :
-          stack.push(num1 * num2);
-          break;
-        case OPERATOR.DIVIDE :
-          stack.push(num1 / num2);
-          break;
-        default :
-          break;
-      }
+      stack.push(calculate[item](num1, num2));
     }
   })
 
   return stack[0];
-}
+};
 
 function test(str) {
   if (str.length > 50) {
@@ -129,7 +119,7 @@ function test(str) {
 
   console.log(`postfix: ${postfixArr.join('')} / result: ${result}`);
   return result;
-}
+};
 
 // Execute Test
 const exampleStrList = [
