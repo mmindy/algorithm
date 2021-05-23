@@ -5,27 +5,18 @@
  * 조건: 문자열 최대 길이는 30
  * */
 
-// Constant
-const RESULT = {
-  YES: 'YES!',
-  NO: 'NO!',
-};
-const MSG = {
-  MAX_LENGTH: '최대 입력 글자수는 30개입니다',
-};
-const PARENTHESIS = {
-  OPEN: '(',
-  CLOSE: ')',
-};
-
 // Test Function
 function test(str) {
   if (str.length > 30) {
-    console.warn(MSG.MAX_LENGTH);
+    console.warn('최대 입력 글자수는 30개입니다');
     return;
   }
+  const PARENTHESIS = {
+    OPEN: '(',
+    CLOSE: ')',
+  };
 
-  let result = RESULT.NO;
+  let result = 'YES';
   const arr = [...str];
   const stack = [];
 
@@ -36,12 +27,15 @@ function test(str) {
       if (stack.length) {
         stack.pop();
       } else {
-        result = RESULT.NO;
+        result = 'NO';
         break;
       }
     }
   }
 
+  if (stack.length) {
+    result = 'NO';
+  }
 
   console.log(`Result is >> ${result} <<`);
   return result;
@@ -51,6 +45,7 @@ function test(str) {
 const exampleStrList = [
   '(()(()))(()',
   '()(()(())',
+  '(())()',
   '()(()(())()(()(())()(()(())()(()(())()(()(())',
 ];
 exampleStrList.forEach(exampleStr => test(exampleStr));
