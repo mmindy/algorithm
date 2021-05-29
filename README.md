@@ -6,3 +6,6 @@
 - [후위식 연산](stack-queue/4-postfix.js)
 - [쇠막대기](stack-queue/5-iron-bars.js)
 - [공주 구하기](stack-queue/6-princess.js)
+
+## Soring and Greedy and Decision
+- [선택 정렬](sorting-greedy-decision/1-selection-sort.js)
