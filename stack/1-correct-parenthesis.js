@@ -49,4 +49,3 @@ const exampleStrList = [
   '()(()(())()(()(())()(()(())()(()(())()(()(())',
 ];
 exampleStrList.forEach(exampleStr => test(exampleStr));
-
