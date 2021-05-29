@@ -9,3 +9,4 @@
 
 ## Soring and Greedy and Decision
 - [선택 정렬](sorting-greedy-decision/1-selection-sort.js)
+- [버블 정렬](sorting-greedy-decision/2-bubble-sort.js)
