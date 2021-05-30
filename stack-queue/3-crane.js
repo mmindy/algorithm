@@ -7,13 +7,13 @@ function solution({ board, moves }) {
     board.some(bItem => {
       tempItem = bItem[mItem - 1];
       if (tempItem) {
-        stack.push(tempItem);
         bItem[mItem - 1] = 0;
 
         if (tempItem === stack[stack.length - 1]) {
           burst += 2;
           stack.pop();
-          stack.pop();
+        } else {
+          stack.push(tempItem);
         }
       }
       return tempItem;

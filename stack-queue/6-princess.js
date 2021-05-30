@@ -1,5 +1,5 @@
 function solution([n, k]) {
-  let princes = Array.from({ length: n }, (v, i) => i + 1);
+  const princes = Array.from({ length: n }, (v, i) => i + 1);
   const convertK = k - 1;
   let temp = [];
   let turn = 0;
