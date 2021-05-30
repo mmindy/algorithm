@@ -1,18 +1,16 @@
 function solution([required, curriculum]) {
-  let tempStr = '';
+  const queue = [...required];
+  let first = '';
 
-  [...curriculum].forEach(cItem => {
-    [...required].forEach(rItem => {
-      if (cItem === rItem) {
-        tempStr += rItem;
-      }
-    })
+  [...curriculum].some(cItem => {
+    first = queue[0];
+    if (first === cItem) {
+      queue.shift();
+    }
+    return !queue.length;
   })
 
-  const result = required === tempStr ? 'YES' : 'NO';
-
-  console.log(result);
-  return result;
+  return queue.length ? 'NO' : 'YES';
 }
 
 // Execute Test

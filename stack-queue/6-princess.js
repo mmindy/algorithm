@@ -1,19 +1,17 @@
 function solution([n, k]) {
   const princes = Array.from({ length: n }, (v, i) => i + 1);
   const convertK = k - 1;
-  let temp = [];
+  let temp = 0;
   let turn = 0;
 
   while(princes.length > 1) {
-    princes.forEach(() => {
-      temp = princes.shift();
-      if (turn === convertK) {
-        turn = 0;
-      } else {
-        princes.push(temp);
-        turn++;
-      }
-    })
+    temp = princes.shift();
+    if (turn !== convertK) {
+      princes.push(temp);
+      turn++;
+    } else {
+      turn = 0;
+    }
   }
 
   console.log(princes[0]);

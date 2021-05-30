@@ -7,8 +7,8 @@ function solution([len, str]) {
   let num1 = 0;
   let num2 = 0;
 
-  for (let i = 0; i < len; i++) {
-    for (let j = 0; j < len - i; j++) {
+  for (let i = 0; i < len - 1; i++) {
+    for (let j = 0; j < len -1 - i; j++) {
       num1 = arr[j];
       num2 = arr[j + 1];
       if (num1 > num2) {

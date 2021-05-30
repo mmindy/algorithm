@@ -4,16 +4,17 @@
 
 function solution([len, str]) {
   const arr = str.split(' ').map(item => +item);
-  let minVal = 0;
+  let minIdx = 0;
 
   for (let i = 0; i < len; i++) {
-    minVal = arr[i];
+    minIdx = i;
     for (let j = i + 1; j < len; j++) {
-      if (minVal > arr[j]) {
-        minVal = arr[j]
-        arr[j] = arr[i];
-        arr[i] = minVal;
+      if (arr[minIdx] > arr[j]) {
+        minIdx = j;
       }
+    }
+    if (i !== minIdx) {
+      [arr[i], arr[minIdx]] = [arr[minIdx], arr[i]];
     }
   }
 

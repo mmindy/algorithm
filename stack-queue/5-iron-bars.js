@@ -10,20 +10,21 @@ function solution(str) {
 
   let piece = 0;
   const stack = [];
+  let prevStr = '';
 
   [...str].forEach((item, idx) => {
-    stack.push(item);
-    if (item === PARENTHESIS.CLOSE) {
+    if (item === PARENTHESIS.OPEN) {
+      stack.push(item);
+    } else {
       const str1 = stack.pop();
-      const str2 = str[idx - 1];
 
-      stack.pop();
-      if (str1 === str2) { // 막대기 끝
+      if (str1 === prevStr) { // 막대기 끝
         piece += 1;
-      } else if (str1 !== str2 && stack.length) { // 레이저일 경우
+      } else if (str1 !== prevStr && stack.length) { // 레이저일 경우
         piece += stack.length;
       }
     }
+    prevStr = item;
   })
 
   console.log(piece);
