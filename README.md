@@ -12,11 +12,11 @@
 ## Soring and Greedy and Decision
 - [선택 정렬](sorting-greedy-decision/1-selection-sort.js)
 - [버블 정렬](sorting-greedy-decision/2-bubble-sort.js)
-- Special Sort(구글 인터뷰)
-- 삽입 정렬
-- Least Recently Used(카카오 캐시 문제 변형)
-- 장난꾸러기 현수
-- 좌표 정렬
+- [Special Sort(구글 인터뷰)](sorting-greedy-decision/3-special-sort.js)
+- [삽입 정렬](sorting-greedy-decision/4-insertion-sort.js)
+- [Least Recently Used(카카오 캐시 문제 변형)](sorting-greedy-decision/5-least-recently-used.js)
+- [장난꾸러기 현수](sorting-greedy-decision/6-mischievous-child.js)
+- [좌표 정렬](sorting-greedy-decision/7-sorting-location.js)
 - 회의실 배정
 - 결혼식
 - 이분 검색
