@@ -18,7 +18,7 @@
 - [장난꾸러기 현수](sorting-greedy-decision/6-mischievous-child.js)
 - [좌표 정렬](sorting-greedy-decision/7-sorting-location.js)
 - [회의실 배정](sorting-greedy-decision/8-meeting-room-assignment.js)
-- 결혼식
+- [결혼식](sorting-greedy-decision/9-wedding-ceremony.js)
 - 이분 검색
 - 뮤직비디오(결정 알고리즘)
 - 마구간 정하기(결정 알고리즘)
