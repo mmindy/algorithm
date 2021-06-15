@@ -17,7 +17,7 @@
 - [Least Recently Used(카카오 캐시 문제 변형)](sorting-greedy-decision/5-least-recently-used.js)
 - [장난꾸러기 현수](sorting-greedy-decision/6-mischievous-child.js)
 - [좌표 정렬](sorting-greedy-decision/7-sorting-location.js)
-- 회의실 배정
+- [회의실 배정](sorting-greedy-decision/8-meeting-room-assignment.js)
 - 결혼식
 - 이분 검색
 - 뮤직비디오(결정 알고리즘)
