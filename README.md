@@ -9,7 +9,7 @@
 - [공주 구하기](stack-queue/6-princess.js)
 - [교육 과정 설계](stack-queue/7-curriculum.js)
 
-## Soring and Greedy and Decision
+## Sorting & Greedy & Decision
 - [선택 정렬](sorting-greedy-decision/1-selection-sort.js)
 - [버블 정렬](sorting-greedy-decision/2-bubble-sort.js)
 - [Special Sort(구글 인터뷰)](sorting-greedy-decision/3-special-sort.js)
@@ -19,6 +19,6 @@
 - [좌표 정렬](sorting-greedy-decision/7-sorting-location.js)
 - [회의실 배정](sorting-greedy-decision/8-meeting-room-assignment.js)
 - [결혼식](sorting-greedy-decision/9-wedding-ceremony.js)
-- 이분 검색
+- [이분 검색](sorting-greedy-decision/10-binaray-search.js)
 - 뮤직비디오(결정 알고리즘)
 - 마구간 정하기(결정 알고리즘)
