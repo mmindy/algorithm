@@ -1,14 +1,11 @@
 function solution([num, ...locations]) {
-  let curr, next;
-  for (let i = 0; i < num - 1; i++) {
-    curr = locations[i];
-    next = locations[i + 1];
+  locations.sort((curr, next) => {
     if (curr[0] > next[0]
-      || (curr[0] === next[0] && curr[1] > next[1])
-    ) {
-      [locations[i], locations[i + 1]] = [locations[i + 1], locations[i]];
+      || (curr[0] === next[0] && curr[1] > next[1])) {
+      return 1;
     }
-  }
+    return -1;
+  })
   console.log(locations);
   return locations;
 }
