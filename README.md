@@ -20,5 +20,5 @@
 - [회의실 배정](sorting-greedy-decision/8-meeting-room-assignment.js)
 - [결혼식](sorting-greedy-decision/9-wedding-ceremony.js)
 - [이분 검색](sorting-greedy-decision/10-binaray-search.js)
-- 뮤직비디오(결정 알고리즘)
+- [뮤직비디오(결정 알고리즘)](sorting-greedy-decision/11-music-video.js)
 - 마구간 정하기(결정 알고리즘)
