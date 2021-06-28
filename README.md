@@ -22,3 +22,6 @@
 - [이분 검색](sorting-greedy-decision/10-binaray-search.js)
 - [뮤직비디오(결정 알고리즘)](sorting-greedy-decision/11-music-video.js)
 - 마구간 정하기(결정 알고리즘)
+
+## Recursion & Exhaustive Search
+- [재귀함수](recursion-exhaustive-search/1-recursive-function.js)
