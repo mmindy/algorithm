@@ -25,3 +25,4 @@
 
 ## Recursion & Exhaustive Search
 - [재귀함수](recursion-exhaustive-search/1-recursive-function.js)
+- [재귀함수를 이용한 이진수 출력](recursion-exhaustive-search/2-binary-numerals.js)
