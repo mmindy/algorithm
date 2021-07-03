@@ -1,17 +1,20 @@
-function solution(num) {
-  let temp  = 0;
+function solution(max) {
+  let result = '';
+  let num = 0;
 
-  const printNum = (n) => {
-    temp += 1;
-    console.log(temp);
-    if (temp < n) {
-      printNum(n);
+  const print = () => {
+    num++;
+    result += ` ${num}`;
+    if (num < max) {
+      print();
     }
   }
 
-  printNum(num);
+  print();
+  console.log(result);
+  return result;
 }
 
 // Execute Test
-const exampleList = [3, 5];
+const exampleList = [3];
 exampleList.forEach(example => solution(example));
