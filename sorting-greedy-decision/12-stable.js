@@ -1,28 +1,28 @@
-function solution([num, locations]) {
+function solution([count, locations]) {
   locations.sort((a, b) => a - b);
 
-  let result = '';
-  let left = 1;
-  let right = locations[locations.length - 1] - locations[0];
-
-  const getNum = (n, arr) => {
-    let tempNum = 1;
+  const getCount = (n, arr) => {
+    let tempCount = 1;
     let prev = arr[0];
 
     for (let i = 1; i < arr.length; i++) {
       if (arr[i] - prev >= n) {
-        tempNum++;
+        tempCount++;
         prev = arr[i];
       }
     }
 
-    return tempNum;
+    return tempCount;
   };
 
-  while (left <= right) {
-    const mid = parseInt((left + right) / 2);
+  let result = '';
+  let [left, right] = [1, locations[locations.length - 1] - locations[0]];
+  let mid = 0;
 
-    if (getNum(mid, locations) >= num) {
+  while (left <= right) {
+    mid = parseInt((left + right) / 2);
+
+    if (getCount(mid, locations) >= count) {
       result = mid;
       left = mid + 1;
     } else {
