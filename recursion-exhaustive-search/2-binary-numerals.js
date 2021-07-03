@@ -1,17 +1,20 @@
 function solution(num) {
   let result = '';
 
-  const printNum = (n) => {
+  const convertToBinary = (n) => {
     const quotient = parseInt(n / 2);
     const remainder = n % 2;
-    result += `${remainder}`;
-    if (quotient) {
-      printNum(quotient);
-    }
-  }
-  printNum(num);
 
-  console.log(result);
+    result = `${remainder}${result}`;
+
+    if (quotient) {
+      convertToBinary(quotient);
+    }
+  };
+
+  convertToBinary(num);
+
+  console.log(result)
   return result;
 }
 
