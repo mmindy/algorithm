@@ -6,10 +6,8 @@
  */
 
 
-function solution([num, dvdNum, songs]) {
-  songs = songs.split(' ').map(item => +item);
+function solution([dvdCount, songs]) {
   const total = songs.reduce((c, p) => c + p, 0);
-  const getMid = (l, r) => parseInt((l + r) / 2);
 
   if (total > 10000) {
     return;
@@ -31,25 +29,27 @@ function solution([num, dvdNum, songs]) {
 
   let [left, right] = [Math.max(...songs), total];
   let [count, mid] = [1, 0];
+
   while (left <= right) {
-    mid = getMid(left, right);
+    mid = parseInt((left + right) / 2);
     count = getCount(mid, [...songs]);
 
-    if (count > dvdNum) {
+    if (count > dvdCount) {
       left = mid + 1;
-    } else if (count < dvdNum) {
+    } else if (count < dvdCount) {
       right = mid - 1;
     } else {
       break;
     }
   }
+
   console.log(mid, count);
   return mid;
 }
 
 // Execute Test
-const exampleStrList = [
-  [9, 3, '1 2 3 4 5 6 7 8 9'],
-  [9, 3, '1 9 3 4 5 6 7 8 1'],
+const exampleList = [
+  [3, [1, 2, 3, 4, 5, 6, 7, 8, 9]],
+  [3, [1, 9, 3, 4, 5, 6, 7, 8, 1]],
 ];
-exampleStrList.forEach(exampleStr => solution(exampleStr));
+exampleList.forEach(example => solution(example));
