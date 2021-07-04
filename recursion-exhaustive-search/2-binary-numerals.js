@@ -5,11 +5,10 @@ function solution(num) {
     const quotient = parseInt(n / 2);
     const remainder = n % 2;
 
-    result = `${remainder}${result}`;
-
-    if (quotient) {
+    if (quotient > 0) {
       convertToBinary(quotient);
     }
+    result += `${remainder}`
   };
 
   convertToBinary(num);
