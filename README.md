@@ -24,5 +24,18 @@
 - [마구간 정하기(결정 알고리즘)](sorting-greedy-decision/12-stable.js)
 
 ## Recursion & Exhaustive Search
-- [재귀함수](recursion-exhaustive-search/1-recursive-function.js)
-- [재귀함수를 이용한 이진수 출력](recursion-exhaustive-search/2-binary-numerals.js)
+- [재귀함수와 스택프레임(중요)](recursion-exhaustive-search/1-recursive-function.js)
+- [이진수 출력(재귀)](recursion-exhaustive-search/2-binary-numerals.js)
+- [이진트리순회(DFS: 깊이우선탐색)](recursion-exhaustive-search/3-binary-tree.js)
+- 부분집합 구하기(이진트리 DFS)
+- 합이 같은 부분집합(이진트리 DFS)
+- 바둑이 승차(이진트리 DFS)
+- 최대점수 구하기(이진트리 DFS)
+- 중복순열(다중 for문과 재귀의 차이점)
+- 동전교환(DFS-Cut Edge Tech)
+- 순열 구하기
+- 팩토리얼
+- 조합수(메모이제이션)
+- 수열 추측하기(순열, 이항계수 응용)
+- 조합 구하기(중요)
+- 수들의 조합
