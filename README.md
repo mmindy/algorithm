@@ -27,7 +27,7 @@
 - [재귀함수와 스택프레임(중요)](recursion-exhaustive-search/1-recursive-function.js)
 - [이진수 출력(재귀)](recursion-exhaustive-search/2-binary-numerals.js)
 - [이진트리순회(DFS: 깊이우선탐색)](recursion-exhaustive-search/3-binary-tree.js)
-- 부분집합 구하기(이진트리 DFS)
+- [부분집합 구하기(이진트리 DFS)](recursion-exhaustive-search/4-powerset.js)
 - 합이 같은 부분집합(이진트리 DFS)
 - 바둑이 승차(이진트리 DFS)
 - 최대점수 구하기(이진트리 DFS)
