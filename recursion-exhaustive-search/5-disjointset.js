@@ -3,7 +3,7 @@ function solution(arr) {
   const flagArr = Array(arr.length).fill(false);
 
   const dfs = (depth) => {
-    if (depth === arr.length) {
+    if (depth === arr.length - 1) {
       let [sum1, sum2] = [0, 0];
 
       arr.forEach((item, idx) => {
