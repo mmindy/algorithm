@@ -28,7 +28,7 @@
 - [이진수 출력(재귀)](recursion-exhaustive-search/2-binary-numerals.js)
 - [이진트리순회(DFS: 깊이우선탐색)](recursion-exhaustive-search/3-binary-tree.js)
 - [부분집합 구하기(이진트리 DFS)](recursion-exhaustive-search/4-powerset.js)
-- 합이 같은 부분집합(이진트리 DFS)
+- [합이 같은 부분집합(이진트리 DFS)](recursion-exhaustive-search/5-disjointset.js)
 - 바둑이 승차(이진트리 DFS)
 - 최대점수 구하기(이진트리 DFS)
 - 중복순열(다중 for문과 재귀의 차이점)
