@@ -32,7 +32,7 @@
 - [바둑이 승차(이진트리 DFS)](recursion-exhaustive-search/6-doggie.js)
 - [최대점수 구하기(이진트리 DFS)](recursion-exhaustive-search/7-maximum-score.js)
 - [중복순열(다중 for문과 재귀의 차이점)](recursion-exhaustive-search/8-permutation.js)
-- 동전교환(DFS-Cut Edge Tech)
+- [동전교환(DFS-Cut Edge Tech)](recursion-exhaustive-search/9-coin-exchange.js)
 - 순열 구하기
 - 팩토리얼
 - 조합수(메모이제이션)

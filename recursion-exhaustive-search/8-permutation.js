@@ -4,19 +4,19 @@
 function solution([num, cnt]) {
   let result = [];
 
-  const makePermutation = (depth, arr) => {
+  const dfs = (depth, arr) => {
     if (depth === cnt) {
       result.push([...arr]);
     } else {
       for (let i = 1; i <= num; i++) {
-        makePermutation(depth + 1, [...arr, i]);
+        dfs(depth + 1, [...arr, i]);
       }
     }
   };
-  makePermutation(0, []);
+  dfs(0, []);
 
-  console.log(result);
-  return result;
+  console.log(`${result.join(' / ')} // ${result.length}`);
+  return `${result.join(' / ')} // ${result.length}`;
 }
 
 // Execute Test
