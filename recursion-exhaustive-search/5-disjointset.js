@@ -1,26 +1,20 @@
 function solution(arr) {
   let answer = 'NO';
   const flagArr = Array(arr.length).fill(false);
+  const total = arr.reduce((acc, cur) => acc += cur);
 
   const dfs = (depth) => {
-    if (depth === arr.length - 1) {
-      let [sum1, sum2] = [0, 0];
+    if (answer === 'YES') {
+      return;
+    }
+    if (depth === arr.length) {
+      const tempArr = arr.filter((v, idx) => flagArr[idx]);
+      const sum = tempArr.length ? tempArr.reduce((acc, cur) => acc += cur) : 0;
 
-      arr.forEach((item, idx) => {
-        if (flagArr[idx]) {
-          sum1 += item;
-        } else {
-          sum2 += item;
-        }
-      })
-
-      if (sum1 === sum2) {
+      if (sum === total / 2) {
         answer = 'YES';
       }
     } else {
-      if (answer === 'YES') {
-        return;
-      }
       flagArr[depth] = true; // 포함
       dfs(depth + 1);
 

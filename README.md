@@ -30,8 +30,8 @@
 - [부분집합 구하기(이진트리 DFS)](recursion-exhaustive-search/4-powerset.js)
 - [합이 같은 부분집합(이진트리 DFS)](recursion-exhaustive-search/5-disjointset.js)
 - [바둑이 승차(이진트리 DFS)](recursion-exhaustive-search/6-doggie.js)
-- 최대점수 구하기(이진트리 DFS)
-- 중복순열(다중 for문과 재귀의 차이점)
+- [최대점수 구하기(이진트리 DFS)](recursion-exhaustive-search/7-maximum-score.js)
+- [중복순열(다중 for문과 재귀의 차이점)](recursion-exhaustive-search/8-permutation.js)
 - 동전교환(DFS-Cut Edge Tech)
 - 순열 구하기
 - 팩토리얼
