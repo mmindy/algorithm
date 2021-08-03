@@ -7,6 +7,13 @@ function solution([coin, change]) {
   let temp = 0;
 
   const dfs = (cnt, rest) => {
+    // if (rest < 0) {
+    //   return;
+    // }
+    if (result >= cnt) { // ★ cut edge tech: 불필요한 dfs 막음
+      return;
+    }
+
     if (rest === 0) {
       result = Math.min(result, cnt);
     } else {
@@ -28,5 +35,12 @@ function solution([coin, change]) {
 // Execute Test
 const exampleList = [
   [[1, 2, 5], 15],
+  [[1, 2, 5], 18],
 ];
 exampleList.forEach(example => solution(example));
+
+/**
+ * 참고
+ * 1. 빅 오 표기법
+ * 2. dut edge tech
+ * */

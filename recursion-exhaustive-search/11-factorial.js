@@ -4,11 +4,12 @@
 function solution(max) {
   let result = 0;
 
-  const factorial = (num, multipleNum) => {
+  const factorial = (num) => {
     if (num === 1) {
-      result = multipleNum;
+      return;
     } else {
-      factorial(num - 1, multipleNum * (num - 1));
+      result *= num - 1;
+      factorial(num - 1);
     }
   };
 

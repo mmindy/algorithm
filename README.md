@@ -35,7 +35,7 @@
 - [동전교환(DFS-Cut Edge Tech)](recursion-exhaustive-search/9-coin-exchange.js)
 - [순열 구하기](recursion-exhaustive-search/10-permutation.js)
 - [팩토리얼](recursion-exhaustive-search/11-factorial.js)
-- 조합수(메모이제이션)
+- [조합수(메모이제이션)](recursion-exhaustive-search/12-memoization.js)
 - 수열 추측하기(순열, 이항계수 응용)
 - 조합 구하기(중요)
 - 수들의 조합
