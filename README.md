@@ -37,5 +37,5 @@
 - [팩토리얼](recursion-exhaustive-search/11-factorial.js)
 - [조합수(메모이제이션)](recursion-exhaustive-search/12-memoization.js)
 - 수열 추측하기(순열, 이항계수 응용)
-- 조합 구하기(중요)
+- [조합 구하기(중요)](recursion-exhaustive-search/14-combination.js)
 - 수들의 조합
