@@ -1,15 +1,12 @@
 function solution(maze) {
   const n = maze.length;
-  const path = [];
-  let cnt = 0;
-
   const dx = [-1, 0, 1, 0];
   const dy = [0, -1, 0, 1];
+  let cnt = 0;
 
   const dfs = (x, y) => {
     if (x === n - 1 && y === n - 1) {
       cnt++;
-      console.log(path);
     } else {
       let [tempX, tempY] = [0, 0];
       for (let i = 0; i < dx.length; i++) {
