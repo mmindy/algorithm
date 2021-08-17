@@ -43,7 +43,7 @@
 ## Graph & Search
 - 그래프와 인접행렬
 - [경로탐색(DFS-인접행렬 : 노드개수가 적을 때)](graph-search/2-adjacency-matrix.js)
-- 경로탐색(DFS-인접리스트 : 노드개수가 많을 때 적용)
+- [경로탐색(DFS-인접리스트 : 노드개수가 많을 때 적용)](graph-search/3-adjacency-list.js)
 - 미로탐색
 - 이진트리 넓이우선탐색(BFS)
 - 송아지 찾기(BFS)

@@ -1,21 +1,24 @@
 function solution([n, m, linkArr]) {
-  const matrix = Array.from({ length: n }, () => Array(n).fill(0));
+  const listObj = {};
 
   linkArr.forEach(item => {
-    matrix[item[0] - 1][item[1] - 1] = 1;
+    if (!listObj[item[0]]) {
+      listObj[item[0]] = [item[1]];
+    } else {
+      listObj[item[0]].push(item[1]);
+    }
   })
 
   const ch = Array(n).fill(0);
   const path = [];
   let cnt = 0;
-
   const dfs = (vertax) => {
     if (vertax === n) {
       cnt++;
       console.log(path);
     } else {
       for (let i = 1; i <= n; i++) {
-        if (matrix[vertax - 1][i - 1] === 1 && ch[i - 1] === 0) {
+        if (listObj[vertax].includes(i) && ch[i - 1] === 0) {
           ch[i - 1] = 1;
           path.push(i);
           dfs(i);
