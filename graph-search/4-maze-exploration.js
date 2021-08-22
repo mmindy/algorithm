@@ -1,6 +1,6 @@
 function solution(maze) {
   const n = maze.length;
-  const dx = [-1, 0, 1, 0];
+  const dx = [-1, 0, 1, 0]; // 좌-상-우-하
   const dy = [0, -1, 0, 1];
   let cnt = 0;
 
