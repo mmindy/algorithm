@@ -17,7 +17,7 @@ function solution([n, m, linkArr]) {
       cnt++;
       console.log(path);
     } else {
-      for (let i = 1; i <= n; i++) {
+      for (let i = 1; i <= listObj[vertax].length; i++) {
         if (listObj[vertax].includes(i) && ch[i - 1] === 0) {
           ch[i - 1] = 1;
           path.push(i);
