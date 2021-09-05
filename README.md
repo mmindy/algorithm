@@ -48,4 +48,4 @@
 - [이진트리 넓이우선탐색(BFS)](graph-search/5-breadth-first-search.js)
 - [송아지 찾기(BFS)](graph-search/6-calf.js)
 - [섬나라 아일랜드(DFS)](graph-search/7-island-dpf.js)
-- 섬나라 아일랜드(BFS : 넓이우선탐색)
+- [섬나라 아일랜드(BFS : 넓이우선탐색)](graph-search/8-island-bfs.js)
